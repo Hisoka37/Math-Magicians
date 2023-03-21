@@ -1,23 +1,6 @@
-import PropTypes from 'prop-types';
+import Button from './Button';
 import './calculator.css';
 
-function Button(props) {
-  const { digit, className } = props;
-  return (
-    <button type="button" className={className}>
-      {digit}
-    </button>
-  );
-}
-
-Button.propTypes = {
-  digit: PropTypes.string.isRequired,
-  className: PropTypes.string,
-};
-
-Button.defaultProps = {
-  className: '',
-};
 function Calculator() {
   return (
     <div className="calculator-grid">
