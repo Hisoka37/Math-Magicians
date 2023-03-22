@@ -38,9 +38,11 @@ HTML5 and css3 which are the latest versions and JavaScript were used in this pr
 <details>
   <summary>Client</summary>
   <ul>
+    <li><a href="">JavaScript</a></li>
     <li><a href="">React.js</a></li>
     <li><a href="">Css</a></li>
     <li><a href="">HTML</a></li>
+     
   </ul>
 </details>
 
