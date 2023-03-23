@@ -31,10 +31,6 @@ function Calculator() {
     }
   };
 
-  const handlePercentageClick = () => {
-    setcurrentOperation(Big(currentOperation).mod(100).toString());
-  };
-
   const handleEqualsClick = () => {
     const result = operate(previousOperation, currentOperation, operation);
     setpreviousOperation('');
@@ -63,7 +59,7 @@ function Calculator() {
       </div>
       <Button handleClick={handleAllClearClick} type="button" digit="AC" />
       <Button handleClick={handleNegateClick} type="button" digit="+/-" />
-      <Button handleClick={handlePercentageClick} type="button" digit="%" />
+      <Button handleClick={handleOperationClick} type="button" digit="%" />
       <Button
         handleClick={handleOperationClick}
         type="button"
