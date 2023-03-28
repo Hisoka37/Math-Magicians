@@ -1,4 +1,9 @@
 
+.calculator-page {
+  display: flex;
+  justify-content: space-between;
+}
+
 .calculator-grid {
   display: grid;
   margin-top: 2rem;
@@ -38,5 +43,10 @@
 }
 
 .btncolor {
-  background-color: rgb(253, 109, 56);
+  background-color: #ec5454;
+}
+
+.calculator-page h1 {
+  font-size: 40px;
+  color: #002b5b;
 }

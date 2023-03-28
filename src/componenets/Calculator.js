@@ -49,63 +49,66 @@ function Calculator() {
   };
 
   return (
-    <div className="calculator-grid">
-      <div className="input-output">
-        <div className="current-operand">
-          {operation}
-          {previousOperation}
+    <div className="calculator-page">
+      <h1>Time For Some Math</h1>
+      <div className="calculator-grid">
+        <div className="input-output">
+          <div className="current-operand">
+            {operation}
+            {previousOperation}
+          </div>
+          <div className="input-output">{currentOperation}</div>
         </div>
-        <div className="input-output">{currentOperation}</div>
+        <Button handleClick={handleAllClearClick} type="button" digit="AC" />
+        <Button handleClick={handleNegateClick} type="button" digit="+/-" />
+        <Button handleClick={handleOperationClick} type="button" digit="%" />
+        <Button
+          handleClick={handleOperationClick}
+          type="button"
+          digit="÷"
+          className="btncolor"
+        />
+        <Button handleClick={handleDigitClick} type="button" digit="7" />
+        <Button handleClick={handleDigitClick} type="button" digit="8" />
+        <Button handleClick={handleDigitClick} type="button" digit="9" />
+        <Button
+          handleClick={handleOperationClick}
+          type="button"
+          digit="x"
+          className="btncolor"
+        />
+        <Button handleClick={handleDigitClick} type="button" digit="4" />
+        <Button handleClick={handleDigitClick} type="button" digit="5" />
+        <Button handleClick={handleDigitClick} type="button" digit="6" />
+        <Button
+          handleClick={handleOperationClick}
+          type="button"
+          digit="-"
+          className="btncolor"
+        />
+        <Button handleClick={handleDigitClick} type="button" digit="1" />
+        <Button handleClick={handleDigitClick} type="button" digit="2" />
+        <Button handleClick={handleDigitClick} type="button" digit="3" />
+        <Button
+          handleClick={handleOperationClick}
+          type="button"
+          digit="+"
+          className="btncolor"
+        />
+        <Button
+          handleClick={handleDigitClick}
+          type="button"
+          digit="0"
+          className="span-two"
+        />
+        <Button handleClick={handleDigitClick} type="button" digit="." />
+        <Button
+          handleClick={handleEqualsClick}
+          type="button"
+          digit="="
+          className="btncolor"
+        />
       </div>
-      <Button handleClick={handleAllClearClick} type="button" digit="AC" />
-      <Button handleClick={handleNegateClick} type="button" digit="+/-" />
-      <Button handleClick={handleOperationClick} type="button" digit="%" />
-      <Button
-        handleClick={handleOperationClick}
-        type="button"
-        digit="÷"
-        className="btncolor"
-      />
-      <Button handleClick={handleDigitClick} type="button" digit="7" />
-      <Button handleClick={handleDigitClick} type="button" digit="8" />
-      <Button handleClick={handleDigitClick} type="button" digit="9" />
-      <Button
-        handleClick={handleOperationClick}
-        type="button"
-        digit="x"
-        className="btncolor"
-      />
-      <Button handleClick={handleDigitClick} type="button" digit="4" />
-      <Button handleClick={handleDigitClick} type="button" digit="5" />
-      <Button handleClick={handleDigitClick} type="button" digit="6" />
-      <Button
-        handleClick={handleOperationClick}
-        type="button"
-        digit="-"
-        className="btncolor"
-      />
-      <Button handleClick={handleDigitClick} type="button" digit="1" />
-      <Button handleClick={handleDigitClick} type="button" digit="2" />
-      <Button handleClick={handleDigitClick} type="button" digit="3" />
-      <Button
-        handleClick={handleOperationClick}
-        type="button"
-        digit="+"
-        className="btncolor"
-      />
-      <Button
-        handleClick={handleDigitClick}
-        type="button"
-        digit="0"
-        className="span-two"
-      />
-      <Button handleClick={handleDigitClick} type="button" digit="." />
-      <Button
-        handleClick={handleEqualsClick}
-        type="button"
-        digit="="
-        className="btncolor"
-      />
     </div>
   );
 }
