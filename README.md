@@ -1,4 +1,10 @@
  
+ <a name="_Awesome_Books_Js"></a>
+<div align="center">
+  <br/>
+  <h3><b>Math Magicians</b></h3>
+</div>
+
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -76,7 +82,7 @@ Install this project with:
 1. Installed Git.
 2. Create a local directory that you want to clone the repository.
 3. Open the command prompt in the created directory.
-4. On the terminal run this command git clone <https://github.com/Hisoka37/Math-Magicians>
+4. On the terminal run this command git clone https://github.com/Hisoka37/Math-Magicians.git 
 5. Run ``` npm i --save-dev ```  to Install the dev dependencies
 ### Usage
 
